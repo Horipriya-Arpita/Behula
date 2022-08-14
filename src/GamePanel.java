@@ -102,6 +102,8 @@ public class GamePanel extends JPanel implements Runnable, ActionListener{
         try {
             
             back1 = ImageIO.read(new File("F:\\New Folder (2)\\JavaApp2D\\src\\chobigula\\lev1_backf.png"));
+            //back1 = ImageIO.read(new File("chobigula\\lev1_backf.png"));4
+            //back1 = ImageIO.read(new File("JavaApp2D\\src\\chobigula\\lev1_backf.png"));
             front = ImageIO.read(new File("F:\\New Folder (2)\\JavaApp2D\\src\\chobigula\\backfinall.png"));
             
             back2 = ImageIO.read(new File("F:\\New Folder (2)\\JavaApp2D\\src\\chobigula\\river2.png"));
