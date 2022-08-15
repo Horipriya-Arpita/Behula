@@ -161,9 +161,18 @@ public class MouseInput implements MouseListener{
                     gp.restart();
                     gp.State = "Menu";
                     
-                    
-                    
-                    // test
+                }
+            }
+        }
+        
+        if(GamePanel.State == "dead2")
+        {
+            if(mx>=450 && mx<=750)
+            {
+                if(my>=90 && my<=170)
+                {
+                    gp.restart();
+                    gp.State = "stage2";
                     
                 }
             }
