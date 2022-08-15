@@ -16,28 +16,23 @@ public class KeyInput implements KeyListener{
         
         if(code == KeyEvent.VK_W){
             uppressed = true;
-            //System.out.println("preesseed");
         }
         else if(code == KeyEvent.VK_S){
             downpressed = true;
-            //System.out.println("preesseed");
         }
         else if(code == KeyEvent.VK_A){
             leftpressed = true;
-            //System.out.println("preesseed");
         }
         else if(code == KeyEvent.VK_D){
             rightpressed = true;
-            //System.out.println("preesseed");
+            
         }
         
         else if(code == KeyEvent.VK_SPACE){
             spacepressed = true;
-            //System.out.println("preesseed");
         } 
         else if(code == KeyEvent.VK_ESCAPE){
             escpressed = true;
-            //System.out.println("preesseed");
         }
         
     }
