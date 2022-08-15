@@ -52,7 +52,7 @@ public class GamePanel extends JPanel implements Runnable, ActionListener{
     int FPS = 60;
     
     JLabel water2;
-    private BufferedImage front,back1,back2,player,behula1,behula2,behula3,behula4,stone,water,velab,vela1,vela2,tile,credit,guide,intro,stage1,stage2,endf,dead;
+    private BufferedImage front,back1,back2,player,behula1,behula2,behula3,behula4,stone,water,velab,vela1,vela2,tile,credit,guide,intro,stage1,stage2,endf,dead,dead2;
     public static Rectangle playerd;
     public static Rectangle vela; 
     
@@ -118,8 +118,9 @@ public class GamePanel extends JPanel implements Runnable, ActionListener{
             stage2 = ImageIO.read(new File("F:\\New Folder (2)\\JavaApp2D\\src\\chobigula\\stage2o.png"));
             endf = ImageIO.read(new File("F:\\New Folder (2)\\JavaApp2D\\src\\chobigula\\end_final.png"));
             dead = ImageIO.read(new File("F:\\New Folder (2)\\JavaApp2D\\src\\chobigula\\deadf.png"));
+            dead2 = ImageIO.read(new File("F:\\New Folder (2)\\JavaApp2D\\src\\chobigula\\deadf.png"));
             
-            credit = ImageIO.read(new File("F:\\New Folder (2)\\JavaApp2D\\src\\chobigula\\creditf.png"));
+            credit = ImageIO.read(new File("F:\\New Folder (2)\\JavaApp2D\\src\\chobigula\\credit_neww.png"));
             guide = ImageIO.read(new File("F:\\New Folder (2)\\JavaApp2D\\src\\chobigula\\guidefinal2.png"));
             intro = ImageIO.read(new File("F:\\New Folder (2)\\JavaApp2D\\src\\chobigula\\introfinal2.png"));
             
@@ -176,11 +177,11 @@ public class GamePanel extends JPanel implements Runnable, ActionListener{
     public void addFlag(Graphics gp){
         
         stones.clear();
-        flag = new Rectangle(fx, 450, 50, 200);
-        fx = fx-5;
+        flag = new Rectangle(fx, 0, 50, 750);
+        fx = fx-7;
         //flag.x = flag.x-5;
         gp.setColor(Color.white);
-        gp.fillRect(flag.x, flag.y, 50, 200);
+        gp.fillRect(flag.x, flag.y, 50, 750);
     }
     
     public void addFlag2(Graphics gp){
@@ -322,6 +323,11 @@ public class GamePanel extends JPanel implements Runnable, ActionListener{
                 
             case "dead":
                 g.drawImage(dead,0,0,this);
+                //nmenu.render(g);
+                break;
+             
+            case "dead2":
+                g.drawImage(dead2,0,0,this);
                 //nmenu.render(g);
                 break;
                 
@@ -555,11 +561,10 @@ public class GamePanel extends JPanel implements Runnable, ActionListener{
         for(Rectangle r:stones2)
         {
             if(r.y > 800){
-                score2++;
-                //System.out.println("score2 stu : " + score2);
+                //score2++;
             }
             if(r.intersects(vela)){
-                GamePanel.State = "dead";
+                GamePanel.State = "dead2";
                 isdead2 = true;
             }
         }
@@ -568,9 +573,8 @@ public class GamePanel extends JPanel implements Runnable, ActionListener{
             rect2=stones2.get(i);
             if(rect2.y+rect2.height>HEIGHT )
             {
-                score2++;
-                //System.out.println("score2 stu : " + score2);
                 stones2.remove(rect2);
+                score2++;
                 addstones2(false);
             }
         }
