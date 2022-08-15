@@ -178,7 +178,7 @@ public class GamePanel extends JPanel implements Runnable, ActionListener{
         
         stones.clear();
         flag = new Rectangle(fx, 0, 50, 750);
-        fx = fx-7;
+        fx = fx-5;
         //flag.x = flag.x-5;
         gp.setColor(Color.white);
         gp.fillRect(flag.x, flag.y, 50, 750);
@@ -188,7 +188,7 @@ public class GamePanel extends JPanel implements Runnable, ActionListener{
         
         stones2.clear();
         flag = new Rectangle(0, fy, 1200, 60);
-        fy = fy+7;
+        fy = fy+5;
         //flag.x = flag.x-5;
         gp.setColor(Color.white);
         gp.fillRect(flag.x, flag.y, 1200, 60);
@@ -395,7 +395,7 @@ public class GamePanel extends JPanel implements Runnable, ActionListener{
         
         gp.drawImage(back1,bg1x,0,this);
         gp.drawImage(back1,bg1x+back1.getWidth(),0,this);
-        bg1x = bg1x-7;
+        bg1x = bg1x-5;
         
         if(bg1x < - back1.getWidth()){
             bg1x=0;
@@ -450,7 +450,7 @@ public class GamePanel extends JPanel implements Runnable, ActionListener{
         gp2.drawImage(back2,0,bg2y,this);
         gp2.drawImage(back2,0,bg2y-back2.getHeight(),this);
         //gp2.drawImage(back2,0,bg2y+1600,this);
-        bg2y = bg2y + 7;
+        bg2y = bg2y + 5;
         
         if(bg2y > back2.getHeight()){
             bg2y = 0;
@@ -640,8 +640,8 @@ public class GamePanel extends JPanel implements Runnable, ActionListener{
         }
         
         
-        speed = 7;
-        speed2 = 7;
+        speed = 5;
+        speed2 = 5;
         
 
         

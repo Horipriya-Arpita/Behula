@@ -21,8 +21,6 @@ public class Ashol extends JFrame{
         GamePanel gamePanel = new GamePanel();
         
         win.add(gamePanel);
-        
-        //win.add(gamePanel.water2);
         win.pack();
         win.setLocationRelativeTo(null);
         win.setVisible(true);
