@@ -177,11 +177,11 @@ public class GamePanel extends JPanel implements Runnable, ActionListener{
     public void addFlag(Graphics gp){
         
         stones.clear();
-        flag = new Rectangle(fx, 450, 50, 200);
-        fx = fx-5;
+        flag = new Rectangle(fx, 0, 50, 750);
+        fx = fx-7;
         //flag.x = flag.x-5;
         gp.setColor(Color.white);
-        gp.fillRect(flag.x, flag.y, 50, 200);
+        gp.fillRect(flag.x, flag.y, 50, 750);
     }
     
     public void addFlag2(Graphics gp){
