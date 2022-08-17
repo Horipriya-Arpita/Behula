@@ -85,7 +85,5 @@ public class Player {
         gp.playerd.y += fallingspeed;
         
         fallingspeed = fallingspeed + gravity;
-    }
-    
-    
+    } 
 }
