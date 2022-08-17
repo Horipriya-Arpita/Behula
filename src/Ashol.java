@@ -25,7 +25,7 @@ public class Ashol extends JFrame{
         win.setLocationRelativeTo(null);
         win.setVisible(true);
         
-        //gamePanel.startGameThread();
+       
     }
     
 }

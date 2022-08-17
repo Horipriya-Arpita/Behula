@@ -17,19 +17,19 @@ public class Player2 {
         
         
         if(kih.uppressed==true){
-            y -= speed;
+            //y -= speed;
             gp.vela.y -= speed;
         }
         else if(kih.downpressed==true){
-            y += speed;
+            //y += speed;
             gp.vela.y += speed;
         }
         else if(kih.leftpressed==true){
-            x -= speed;
+            //x -= speed;
             gp.vela.x -= speed;
         }
         else if(kih.rightpressed==true){
-            x += speed;
+            //x += speed;
             gp.vela.x += speed;
         }
 

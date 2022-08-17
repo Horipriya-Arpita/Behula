@@ -22,25 +22,8 @@ public class Player {
     
     public void update() {
         
-        
-        if(kih.uppressed==true){
-            y -= speed;
-            gp.playerd.y -= speed;
-        }
-        else if(kih.downpressed==true){
-            y += speed;
-            gp.playerd.y += speed;
-        }
-        else if(kih.leftpressed==true){
-            x -= speed;
-            gp.playerd.x -= speed;
-        }
-        else if(kih.rightpressed==true){
-            x += speed;
-            gp.playerd.x += speed;
-        }
 
-        else if(kih.escpressed == true){
+        if(kih.escpressed == true){
             gp.State = "Menu";
         }
 
@@ -52,7 +35,6 @@ public class Player {
             }
         }
         else if(kih.spacepressed == false){
-
             fall();
         }
 
@@ -84,7 +66,6 @@ public class Player {
     {
         y += fallingspeed;
         gp.playerd.y += fallingspeed;
-        
         fallingspeed = fallingspeed + gravity;
     }
     

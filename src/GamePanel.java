@@ -449,16 +449,12 @@ public class GamePanel extends JPanel implements Runnable, ActionListener{
         
         gp2.drawImage(back2,0,bg2y,this);
         gp2.drawImage(back2,0,bg2y-back2.getHeight(),this);
-        //gp2.drawImage(back2,0,bg2y+1600,this);
         bg2y = bg2y + 5;
         
         if(bg2y > back2.getHeight()){
             bg2y = 0;
         }
         
-        //gp2.setColor(Color.red);
-        //gp2.fillRect(vela.x,vela.y,vela.width,vela.height);
-        //System.out.println("score2 g : " + score2);
         Font fnt0 = new Font("arial",Font.BOLD,30);
         gp2.setFont(fnt0);
         gp2.setColor(Color.red);
@@ -467,9 +463,7 @@ public class GamePanel extends JPanel implements Runnable, ActionListener{
         gp2.drawString(s,250,30);
         
         gp2.drawImage(velab,vela.x,vela.y,this);
-        //gp2.setColor(Color.red);
-        //gp2.fillRect(vela.x,vela.y,150,vela.height);
-        
+       
         if(score2>5){
             addFlag2(gp2);
         }
@@ -560,9 +554,6 @@ public class GamePanel extends JPanel implements Runnable, ActionListener{
         
         for(Rectangle r:stones2)
         {
-            if(r.y > 800){
-                //score2++;
-            }
             if(r.intersects(vela)){
                 GamePanel.State = "dead2";
                 isdead2 = true;
