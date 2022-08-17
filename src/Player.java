@@ -1,4 +1,3 @@
-
 import java.awt.Color;
 import java.awt.Graphics2D;
 
@@ -67,7 +66,5 @@ public class Player {
         y += fallingspeed;
         gp.playerd.y += fallingspeed;
         fallingspeed = fallingspeed + gravity;
-    }
-    
-    
+    } 
 }
