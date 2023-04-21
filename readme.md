@@ -7,13 +7,13 @@ This game is inspired from Indian mythological character ‘Behula’, who went 
 [Animation of Behula Song by Shunno Band](https://youtu.be/a3-HFoJJPzk)
 ![](src/chobigula/intofinal2.png)
 
-## Gameplay Instructions:
+## Gameplay Instructions
 
 <strong>The objective of this game is to help Behula to reach the heaven where she will have to face many dangers.</strong>
 
 ![](src/chobigula/backfinall.png)
 
-<h1>This game contains 2 levels.</h1>
+<h1>This game contains 2 levels</h1>
 
 <h2>Level 1: </h2>  
 
