@@ -5,6 +5,9 @@ This game is inspired from Indian mythological character ‘Behula’, who went 
 
 ## Inspiration
 [Animation of Behula Song by Shunno Band](https://youtu.be/a3-HFoJJPzk)
+
+### For Video :
+[Facebook Post](https://www.facebook.com/100007113811083/videos/528108895749345)
 ![](src/chobigula/intofinal2.png)
 
 ## Gameplay Instructions
